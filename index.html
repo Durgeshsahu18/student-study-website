@@ -1,33 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Study Material Durgesh</title>
+    <title>Student Study Website</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fc;
-            color: #333;
+            background-color: lightblue;
+            font-family: Arial;
         }
 
-        header {
-            background: #0b1f3a;
-            color: white;
-            padding: 20px;
+        h1 {
+            color: darkblue;
             text-align: center;
         }
 
+        h2 {
+            color: red;
+        }
+
         nav {
-            background: #142d4f;
+            background-color: navy;
             padding: 15px;
             text-align: center;
         }
@@ -35,225 +27,53 @@
         nav a {
             color: white;
             text-decoration: none;
+            margin: 15px;
+        }
+
+        li {
+            background-color: white;
+            padding: 10px;
             margin: 10px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #00d4ff;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #0b1f3a, #1769aa);
-            color: white;
-            padding: 70px 20px;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 35px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
-
-        .btn {
-            background: #00d4ff;
-            color: #0b1f3a;
-            padding: 12px 25px;
-            text-decoration: none;
             border-radius: 8px;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 40px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        section h2 {
-            color: #0b1f3a;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px #0001;
-            text-align: center;
-        }
-
-        .card h3 {
-            color: #1769aa;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            margin-bottom: 20px;
-        }
-
-        .card a {
-            background: #1769aa;
-            color: white;
-            padding: 10px 18px;
-            text-decoration: none;
-            border-radius: 6px;
-        }
-
-        .notes {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            margin-top: 20px;
-            box-shadow: 0 4px 12px #0001;
-        }
-
-        .notes p {
-            margin: 12px 0;
-        }
-
-        pre {
-            background: #0b1f3a;
-            color: #00d4ff;
-            padding: 15px;
-            border-radius: 8px;
-            overflow-x: auto;
-        }
-
-        footer {
-            background: #0b1f3a;
-            color: white;
-            text-align: center;
-            padding: 20px;
         }
     </style>
+
 </head>
 
 <body>
 
-<header>
-    <h1>Student Study Website</h1>
-    <p>Learn Today, Build Tomorrow</p>
-</header>
+    <h1>Welcome to Student Study Website</h1>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#html">HTML</a>
-    <a href="#css">CSS</a>
-    <a href="#python">Python</a>
-    <a href="#about">About</a>
-</nav>
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#subjects">Subjects</a> |
+        <a href="#notes">Notes</a>
+    </nav>
 
-<div class="hero" id="home">
-    <h2>welcome to my study wesite</h2>
-    <p>Your Learning Journey Starts Here!</p>
-    <a href="#subjects" class="btn">Explore Subjects</a>
-</div>
+    <h2 id="home">Home</h2>
+    <p>Welcome to my student study website.</p>
+    <p>This is the home page of my student study website.</p>
 
-<section id="subjects">
-    <h2>Our Study Materials</h2>
+    <h2 id="subjects">Subjects</h2>
+    <p>Here you can find all your BCA subjects.</p>
 
-    <div class="cards">
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>javascript</li>
+    </ol>
 
-        <div class="card">
-            <h3>HTML</h3>
-            <p>Learn website structure and HTML basics.</p>
-            <a href="#html">Read Notes</a>
-        </div>
+    <h2 id="notes">Notes</h2>
 
-        <div class="card">
-            <h3>CSS</h3>
-            <p>Learn website design and styling.</p>
-            <a href="#css">Read Notes</a>
-        </div>
+    <ul>
+        <li>Precis writing - short summary of a passage</li>
+        <li>Report writing - simple report in easy English.</li>
+    </ul>
 
-        <div class="card">
-            <h3>Python</h3>
-            <p>Learn Python programming from basics.</p>
-            <a href="#python">Read Notes</a>
-        </div>
-
-    </div>
+    <p>Here you can find study notes.</p> 
+<section>  
+    <h3>Study Materials</h3>
+<a href="index.html">html notes,css python<a/>
 </section>
-
-<section id="html">
-    <h2>HTML Notes</h2>
-
-    <div class="notes">
-        <h3>What is HTML?</h3>
-        <p>HTML stands for HyperText Markup Language.</p>
-        <p>HTML is used to create the structure of a website.</p>
-
-        <h3>Example:</h3>
-
-<pre>
-&lt;h1&gt;Hello World&lt;/h1&gt;
-&lt;p&gt;My First Website&lt;/p&gt;
-</pre>
-    </div>
-</section>
-
-<section id="css">
-    <h2>CSS Notes</h2>
-
-    <div class="notes">
-        <h3>What is CSS?</h3>
-        <p>CSS stands for Cascading Style Sheets.</p>
-        <p>CSS is used to design and style websites.</p>
-
-        <h3>Example:</h3>
-
-<pre>
-h1 {
-    color: blue;
-    font-size: 30px;
-}
-</pre>
-    </div>
-</section>
-
-<section id="python">
-    <h2>Python Notes</h2>
-
-    <div class="notes">
-        <h3>What is Python?</h3>
-        <p>Python is a popular programming language.</p>
-
-        <h3>Example:</h3>
-
-<pre>
-print("Hello World")
-</pre>
-    </div>
-</section>
-
-<section id="about">
-    <h2>About Us</h2>
-
-    <div class="notes">
-        <h3>About Student Study Website</h3>
-        <p>This website is created for students.</p>
-        <p>Our goal is to provide simple study materials.</p>
-        <p>Learn HTML, CSS and Python easily.</p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Student Study Website</p>
-    <p>Made with HTML and CSS</p>
-</footer>
-
 </body>
 </html>
